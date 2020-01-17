@@ -32,12 +32,7 @@ class BooksApp extends Component {
       });
   }
 
-  resetSearch = () => {
-    this.setState({ searchBooks: [] });
-  };
-
-
-  render() {
+   render() {
     return (
       <div className="app">
           <Route exact path="/" render={() =>(
@@ -50,7 +45,6 @@ class BooksApp extends Component {
             <BookSearch
               books={this.state.books}
               updateShelf={this.updateShelf}
-              resetSearch={this.resetSearch}
             />
           )} />
       </div>
