@@ -1,5 +1,6 @@
 import React, { Component} from 'react'
 import Book from './Book'
+import { Link }  from 'react-router-dom'
 
 class BookCase extends Component {
     render (){
@@ -21,6 +22,8 @@ class BookCase extends Component {
                                                 <li key={book.id}>
                                                     <Book
                                                     book={book}
+                                                    updateShelf={this.props.updateShelf}
+                                                    currentShelf="currentlyReading"
                                                     />
                                                 </li>
                                             ))
@@ -38,6 +41,8 @@ class BookCase extends Component {
                                             <li key={book.id}>
                                                 <Book
                                                 book={book}
+                                                updateShelf = {this.props.updateShelf}
+                                                currentShelf="wantToRead"
                                                 />
                                             </li>
                                         ))
@@ -55,6 +60,8 @@ class BookCase extends Component {
                                                 <li key={book.id}>
                                                     <Book
                                                     book={book}
+                                                    updateShelf = {this.props.updateShelf}
+                                                    currentShelf="read"
                                                     />
                                                 </li>
                                             ))
@@ -65,7 +72,11 @@ class BookCase extends Component {
                 </div>
                 </div>
                 <div className="open-search">
-                <button onClick={() => this.setState({ showSearchPage: true })}>Add a book</button>
+                    <Link
+                        to="/search"
+                    >
+                    <button>Search and add a book</button>
+                    </Link>
                 </div>
             </div>
         );
