@@ -6,8 +6,8 @@ The MyReads project is the first project of the Udacity React Nanodegree. The we
 
 Clone the git repository
 
-* Clone the git repository
-* Change the directory to folder 'reactnd-project-myreads-starter
+* Clone the git repository with https https://github.com/jpschibul/myreads-udacity.git
+* Change the directory to folder 'myreads-udacity'
 * install project dependencies with `npm install`
 * start the development server with `npm start`
 * project can be viewed in your browser using http://localhost:3000 
