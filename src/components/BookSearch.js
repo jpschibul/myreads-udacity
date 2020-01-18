@@ -62,7 +62,7 @@ class BookSearch extends Component {
                                     ''
                                 ));
                                 return (
-                                <li key={searchResults}>
+                                <li key={searchResults.id}>
                                     <Book
                                         book={searchResults}
                                         updateShelf={this.props.updateShelf}
